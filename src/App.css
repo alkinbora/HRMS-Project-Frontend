@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  background-image: url(https://lh3.googleusercontent.com/proxy/QWlr4W6DCmDuQgyRwFImXYNuAIAXYvREcYW4UF34R4N2SbOs-jBlTrsi_3ZvAiVs1vI-I49clfTe926-rkCuoljVFj74iv_PyyLx2bKtiwdSr9aqAQEcw_STi-3i);
+}
+
+.ui.main.container{
+  margin-top: 6em !important;
+  
+}
+
+.footer {
+  position: static;
+  margin-top: 300px;
+}
