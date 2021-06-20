@@ -1,63 +1,49 @@
 import React from "react";
-import { Button, Container, Dropdown, Menu, Icon, Flag } from "semantic-ui-react";
+import { Link } from "react-router-dom";
+import { Container, Button, Menu, Icon, Segment } from "semantic-ui-react";
+import "../App.css";
 
 export default function Navi() {
-    return (
-
-        <div>
-            <Menu inverted fixed="top" size="massive">
-                <Container>
-                    <Button color='black'>
-                        <Icon name="home" color="yellow" size="big" />
-                        Ana Sayfa
-                    </Button>
-                    <Button color='black'>
-                        <Icon name="briefcase" color="yellow" size="big" />
-                        İş İlanları
-                    </Button>
-                    <Menu.Menu position="right">
-
-                        <Menu.Item>
-                            <Button.Group color="black" inverted>
-                                <Button primary inverted color="grey" >
-                                    <Icon name="signup" color="yellow" size="large" />
-                                    Kaydol
-                                </Button>
-                                <Button.Or />
-                                <Button positive inverted color="grey">
-                                    <Icon name="sign in" color="yellow" size="large" />
-                                    Giriş Yap
-                                </Button>
-                            </Button.Group>
-
-                        </Menu.Item>
-                    </Menu.Menu>
-                    {
-                        <Dropdown item text="Dil" pointing vertical>
-                            <Dropdown.Menu>
-                                <Dropdown.Item>
-                                    <Flag name='tr' />
-                                    Turkish
-                                </Dropdown.Item>
-                                <Dropdown.Item>
-                                    <Flag name='us' />
-                                    English
-                                </Dropdown.Item>
-                                <Dropdown.Item>
-                                    <Flag name='es' />
-                                    Spanish
-                                </Dropdown.Item>
-                                <Dropdown.Item><Flag name='fr' />
-                                    French
-                                </Dropdown.Item>
-                                <Dropdown.Item><Flag name='de' />
-                                    German
-                                </Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
-                    }
-                </Container>
-            </Menu>
-        </div>
-    );
+  return (
+    <div>
+      
+        <Menu inverted fixed="top" size="large"> 
+          <Container>
+            <Menu.Item name="Ana Sayfa" as={Link} to={"/"}>
+              <Icon name="home" color="yellow" size="big" />
+              Ana Sayfa
+            </Menu.Item>
+            <Button
+              primary
+              as={Link}
+              to={"/jobAdCreate"}
+              position="right"
+              style={{ margin: "0.5em" }}
+              basic
+              inverted
+              color="black"
+            >
+              İlan Ekle
+            </Button>
+            <Menu.Menu position="right" style={{ margin: "0.5em" }}>
+              <Button.Group>
+                <Button as={Link} to={"/login"} basic inverted color="red">
+                  Giriş yap
+                </Button>
+                <Button
+                  positive
+                  as={Link}
+                  to={"/register"}
+                  basic
+                  inverted
+                  color="red">
+                  Kaydol
+                </Button>
+              </Button.Group>
+            </Menu.Menu>
+          </Container>
+        </Menu>
+     
+    </div>
+  );
 }

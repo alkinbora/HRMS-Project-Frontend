@@ -1,10 +1,10 @@
 .App {
   text-align: center;
-  background-image: url(https://lh3.googleusercontent.com/proxy/QWlr4W6DCmDuQgyRwFImXYNuAIAXYvREcYW4UF34R4N2SbOs-jBlTrsi_3ZvAiVs1vI-I49clfTe926-rkCuoljVFj74iv_PyyLx2bKtiwdSr9aqAQEcw_STi-3i);
+  background-image: url(https://wallpaperaccess.com/full/1285952.jpg);
 }
 
 .ui.main.container{
-  margin-top: 6em !important;
+  margin-top: 4em !important;
   
 }
 
@@ -12,3 +12,43 @@
   position: static;
   margin-top: 300px;
 }
+
+.unmargin {
+  margin: 20 !important;
+}
+
+.gridBack {
+  background-color: transparent !important ;
+}
+
+.ui.large.secondary.inverted.pointing.menu {
+  border-radius: 12px !important;
+  border-color: lightblue !important;
+}
+
+.ui.inverted.button {
+  border: 1px solid lightblue !important;
+}
+.ui.grid {
+  padding: 30px !important;
+}
+
+.aktifResim {
+  width: 500px !important;
+  float: left !important;
+  margin-right: 2130px !important;
+}
+
+.dash {
+  border-radius: 200px !important;
+}
+
+.sideB {
+  background-color: teal !important;
+}
+
+.ui.table {
+  background-color: whitesmoke !important;
+  border-radius: 5px !important;
+}
+
